@@ -4,3 +4,29 @@ def Area(r):
     return d
 res=Area(r)
 print("%.15f"%res)
+//another methhod
+
+
+from decimal import*
+getcontext().prec=17
+pi=(Decimal(22)/Decimal(7))
+p=22/7
+r=int(input("ENTER THE RADIUS "))
+def Area(r,pi):
+    d=(pi*(r**2))
+    return d
+res=Area(r,pi)
+res1=Area(r,p)
+print(res)
+print("%.15f"%res1)
+\\anotheer method
+
+
+from decimal import*
+pi=(Decimal(22)/Decimal(7))
+r=int(input("ENTER THE RADIUS "))
+def Area(r,pi):
+    d=(pi*(r**2))
+    return d
+res=Area(r,pi)
+print(round(res,15)
