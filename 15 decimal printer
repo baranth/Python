@@ -1,0 +1,6 @@
+r=int(input("ENTER THE RADIUS "))
+def Area(r):
+    d=(22/7*(r**2))
+    return d
+res=Area(r)
+print("%.15f"%res)
