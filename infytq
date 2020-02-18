@@ -1,0 +1,26 @@
+income=int(input("Enter the value "))
+if(income<=250000):
+    print("THERE NO TAX\nTOTAL AMOUNT=",income)
+elif(income<=500000):
+    if(income>=250001):
+        a=(0.05*(income-250000))
+        print("THE TAX  AMOUNT IS ",a)
+        e=a*(2/100)
+        print(" EDUCATION CESES IS ",round(e,2))
+        s=a*(1/100)
+        print("SECONDARY AND HIGHER EDUCATION CESES IS ",round(s,2))
+elif(income<=1000000):
+    if(income>=500001):
+        b=(12500+0.5(income-500000))
+        print("THE TAX AMOUNT",b)
+        w=b*(2/100)
+        print(" EDUCATION CESES IS ",round(w,2))
+        r=b*(1/100)
+        print("SECONDARY AND HIGHER EDUCATION CESES IS ",round(r,2))
+else:
+    c=(112500+0.3*(income-1000000))
+    print("THE TAX AMOUNT",c)
+    y=c*(2/100)
+    print(" EDUCATION CESES IS ",round(y,2))
+    u=c*(1/100)
+    print("SECONDARY AND HIGHER EDUCATION CESES IS ",round(u,2))
